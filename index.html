@@ -1,0 +1,167 @@
+<!DOCTYPE html> <!--declaring the html5-->
+<html lang="en"> <!--root element of html-->
+<head> <!--information about the web page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <link rel="icon" type="image/jpg" href="/images/icon.jpg">
+</head>
+<body> <!--visible content of html-->
+    <h1>This is an heading 1</h1> <!--heading is of same types form h1-h6 the size of heading of decreased-->
+    <h1>This is an heading 2</h1>
+    <h2>This is an heading 3</h2>
+    <h2>This is an heading 4</h2>
+    <br> <!--breaking a line and self closing tag-->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Mollitia dolores eius molestias, aperiam quibusdam ut nobis consequatur, 
+        necessitatibus quaerat placeat facilis obcaecati nulla sunt debitis animi soluta unde consectetur doloribus!
+    </p>
+    <a href="lyrics.html" target="_blank" title="Ava Enna">Music</a> <!--href is hypertext reference link,target in tabs is opening when the link is clicked,title is when hover to the Music it shoes the title-->
+    <br>
+    <a href="mailto:yashwanthb0312@gmail.com" target="_blank" title="yash email">email</a>
+    <br>
+    <img src="/images/wallpaper.png" alt="this img is not displayed" height="200" width="200"> <!--creates a image it error occurs it uses the alt-->
+    <br>
+    <a href="https://www.kali.org/docs/introduction/what-is-kali-linux/"> <!--when the image is touched the it opens the a tag href link-->
+        <img src="/images/wallpaper.png" width="400" height="300">
+    </a>
+    <br>
+    <p>Aathichudi.mp3</p>
+    <audio controls >
+    <!--<audio controls autoplay unmuted loop> audio tag is used to run audio controls enables in display(basic controls),autoplay-it starts as soon as music is completed,unmuted- opened with unmuted,loop-after music is completed again plays-->
+        <source src="/music/Aathichudi.mp3" type="audio/mp3">
+    </audio>
+    <p>Katchi Sera.mp3</p>
+    <audio controls >
+        <source src="/music/Katchi Sera.mp3" type="audio/mp3">
+    </audio>
+    <p>Railin Oligal.mp3</p>
+    <audio controls >
+        <source src="/music/Railin Oligal.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <p>Railin Oligal.mp3</p>
+    <audio src="/music/Railin Oligal.mp3" controls></audio><!--another way of declaring audio file-->
+    <video controls>
+        <source src="/video/password generator.mp4">
+    </video>
+    <br>
+    <video src="/video/password generator.mp4" height="200" width="400" controls></video><!--another way of declaring video file-->
+    <a><!--use hyperlink to a as audio given and when touches open up the link--></a>
+    <br>
+    <p>this is normal text</p>
+    <p>this is <b>bold</b> text</p>
+    <p>this is <i>italic</i> text</p>
+    <p>this is <u>underline</u> text</p>
+    <p>this is <del>deleted</del> text</p>
+    <p>this is <big>big</big> text</p>
+    <p>this is <small>small</small> text</p>
+    <p>this is <sub>subcript</sub> text</p>
+    <p>this is <sup>superscript</sup> text</p>
+    <p>this is <tt>monospaces</tt> text</p>
+    <p>this is <mark>mark</mark> text</p>
+    <p>this is <mark style="background-color:lightgreen">mark</mark> text</p>
+    <br>
+    <!--<span> inline container to group element for styling-->
+    <h1 style="color: chartreuse;"><span style="background-color: brown;">this is a span title</span></h1>
+    <!--<div> block container to group elements for styling-->
+    <h1 style="color: blueviolet;"><div style="background-color: darkgoldenrod;">this is a div title</div></h1>
+    <br>
+    <!--Types of lists
+        @unordered
+        @ordered
+        @description
+    -->
+    <h3>Unordered List</h3>
+    <ul>
+        <li>yamaha</li>
+        <li>apache</li>
+        <li>cars</li>
+        <ul>
+            <li>toyota</li>
+            <li>bmw</li>
+        </ul>
+    </ul>
+    <br>
+    <h3>ordered List</h3>
+    <ol>
+        <li>yamaha</li>
+        <li>apache</li>
+        <li>cars</li>
+        <ol>
+            <li>toyota</li>
+            <li>bmw</li>
+        </ol>
+    </ol>
+    <h3>description</h3>
+    <dl style="background-color: brown;border:2px solid">
+        <dt>yamaha</dt><!--data of the table in description-->
+        <dd>it a most wanted bike for the youngesters in tamil nadu</dd><!--description of the text-->
+        <dt>apache</dt>
+        <dt>bmw</dt>
+    </dl>
+    <h1>Tables</h1>
+    <h2>Store House</h2>
+    <table border=2 style="background-color: black;">
+        <tr align="center" style="background-color:lightgrey">
+            <th width="50">mon</th>
+            <th width="50">tue</th>
+            <th width="50">wed</th>
+            <th width="50">thur</th>
+            <th width="50">fri</th>
+            <th width="50">sat</th>
+            <th width="50">sun</th>
+        </tr>
+        <tr align="center" style="background-color:lightgreen">
+            <th width="50">open</th>
+            <th width="50">open</th>
+            <th width="50">open</th>
+            <th width="50">open</th>
+            <th width="50">open</th>
+            <th width="50">closed</th>
+            <th width="50">closed</th>
+        </tr>
+    </table>
+    <h1>button</h1>
+    <a href="/lyrics.html">
+    <button style="background-color: aqua; border: 1; color: brown; border-radius: 25px;">click me</button>
+    </a>
+    <h1>Forms</h1>
+    <forms action="index.php" method="POST">
+        <lable for="user">username</lable><!--for used for generating id -->
+        <input type="text" id="user" placeholder="yashwanth" minlength="6" maxlength="15" required><!--when label is touched it automatically moves to the id and that is for id-->
+        <br>
+        <label for="pass">password</label>
+        <input type="password" id="pass" placeholder="yashwanth" minlength="8" required>
+        <br>
+        <label>email</label>
+        <input type="email" placeholder="email@gmail.com" required><br>
+        <label>phone number</label>
+        <input type="number" placeholder="9342298373" required><br>
+        <label>dob</label>
+        <input type="date"><br>
+        <button>reset</button>
+        <button>submit</button>
+    </forms>
+    <header style="background-color: brown;">
+        <h1>WELCOME TO FULLSTACK</h1>
+        <a href="">home</a>
+        <a href="">about</a>
+        <a href="">contact</a>
+        <a href="">products</a>
+    </header>
+    <main>
+        <h4>check out this cool moves</h4>
+        <img src="/images/wallpaper.png" height="400px" width="400px">
+        <p>this is wallpaper</p>
+    </main>
+    <footer style="background-color: brown;">
+        <hr>
+        author:yashwanth<br>
+        &copy;copyright reserved<br>
+        <a href="">yashwanth</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
